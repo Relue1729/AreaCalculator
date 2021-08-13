@@ -1,6 +1,6 @@
---Используем CategoryID в таблице Categories, 
---тк у нас может быть больше одной строки по одной категории,
---и PrimaryKey вероятно будет RowID
+--РСЃРїРѕР»СЊР·СѓРµРј CategoryID РІ С‚Р°Р±Р»РёС†Рµ Categories, 
+--С‚Рє Сѓ РЅР°СЃ РјРѕР¶РµС‚ Р±С‹С‚СЊ Р±РѕР»СЊС€Рµ РѕРґРЅРѕР№ СЃС‚СЂРѕРєРё РїРѕ РѕРґРЅРѕР№ РєР°С‚РµРіРѕСЂРёРё,
+--Рё PrimaryKey РІРµСЂРѕСЏС‚РЅРѕ Р±СѓРґРµС‚ RowID
 SELECT p.ProductName, c.CategoryName 
 FROM Products p
 LEFT JOIN Categories c ON p.CategoryID = c.CategoryID
